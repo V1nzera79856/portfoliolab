@@ -1,0 +1,44 @@
+.welcome-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  margin-right: 142px;
+}
+
+.header-login {
+  margin-top: 46px;
+  a {
+    width: 90px;
+    height: 36px;
+    border: none;
+    text-transform: none;
+    font-size: 14px;
+
+    &:hover {
+      border: 0.75px solid $yellow;
+    }
+  }
+}
+
+.header-nav {
+  margin-top: 10px;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  text-align: left;
+  font: normal normal normal 18px/24px Open Sans;
+  letter-spacing: 0px;
+  color: $dark;
+  border: none;
+}
+
+.nav-item {
+  padding: 9px 20px;
+
+  &:hover {
+    border: 0.75px solid $dark;
+  }
+}

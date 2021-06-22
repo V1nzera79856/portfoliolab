@@ -1,0 +1,20 @@
+.twd-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.twd-text {
+  font: normal normal normal 38px/55px Open Sans;
+  color: $dark;
+  text-align: center;
+  letter-spacing: -0.76px;
+  margin-bottom: 25px;
+}
+
+.twd-img {
+  margin-bottom: 65px;
+  align-self: center;
+  text-align: center;
+}
