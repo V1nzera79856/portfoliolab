@@ -1,6 +1,7 @@
 import React from "react";
-import {TWD} from "./TWD";
-import {Btn} from "./Btn";
+import {TWD} from "../TWD/TWD";
+import {Btn} from "../Btn/Btn";
+import "./welcomeInfo.scss";
 
 export const WelcomeInfo = () => {
     return (

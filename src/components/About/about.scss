@@ -1,0 +1,30 @@
+@import "../../scss/settings/colors";
+@import "../../scss/settings/fonts";
+
+.about-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-img {
+  width: 50%;
+}
+
+.about-text {
+  white-space: pre-wrap;
+  font: normal normal normal 30px/54px Open Sans;
+  color: $dark;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.about-signature {
+  margin-top: 40px;
+  align-self: flex-end;
+  margin-right: 152px;
+}

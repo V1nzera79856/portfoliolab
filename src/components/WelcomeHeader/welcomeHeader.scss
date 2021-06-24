@@ -1,3 +1,5 @@
+@import "../../scss/settings/colors";
+
 .welcome-header {
   display: flex;
   flex-direction: column;
@@ -37,6 +39,14 @@
 
 .nav-item {
   padding: 9px 20px;
+
+  & a {
+    width: auto;
+    height: auto;
+    border: none;
+    text-transform: none;
+    font-size: 18px;
+  }
 
   &:hover {
     border: 0.75px solid $dark;

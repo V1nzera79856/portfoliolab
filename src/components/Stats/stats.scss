@@ -1,0 +1,36 @@
+@import "../../scss/settings/colors";
+@import "../../scss/settings/fonts";
+
+.stat-container {
+  width: 334px;
+  height: 252px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 46px;
+}
+
+.stat-number {
+  font: normal normal 300 90px/122px Open Sans;
+  color: $brown;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.stat-title {
+  font: normal normal normal 18px/30px Open Sans;
+  letter-spacing: -0.36px;
+  color: $dark;
+  margin-top: 0;
+  margin-bottom: 28px;
+}
+
+.stat-text {
+  font: normal normal 300 16px/18px Merriweather;
+  letter-spacing: -0.32px;
+  color: $dark;
+  margin-top: 0;
+  margin-bottom: 84px;
+}

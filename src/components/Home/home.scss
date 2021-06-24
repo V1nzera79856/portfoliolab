@@ -1,0 +1,39 @@
+@import "../../scss/settings/colors";
+
+.welcome {
+  width: 100%;
+  height: 80vh;
+  background-image: url("../../assets/HomeHeroImage.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: -320px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.stats {
+  width: 100%;
+  height:384px;
+  background-color: $yellow;
+  background-image: url("../../assets/3ColumnsBackground.png");
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 286px;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about {
+  background-color: $white;
+  display: flex;
+  height: 935px;
+  margin-top: 80px;
+}
