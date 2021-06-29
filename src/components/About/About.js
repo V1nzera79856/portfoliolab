@@ -1,8 +1,8 @@
 import React from "react";
 import "./about.scss"
-import People from "../../assets/People.jpg";
+import People from "./People.jpg";
 import {TWD} from "../TWD/TWD";
-import Signature from "../../assets/Signature.svg";
+import Signature from "./Signature.svg";
 
 
 export const About = ({text, twd}) => {

@@ -1,5 +1,5 @@
 import React from "react";
-import Decoration from "../../assets/Decoration.svg";
+import Decoration from "./Decoration.svg";
 import "./twd.scss";
 
 
