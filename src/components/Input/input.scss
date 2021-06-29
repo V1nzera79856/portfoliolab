@@ -1,0 +1,33 @@
+@import "../../scss/settings/fonts";
+@import "../../scss/settings/colors";
+
+.input {
+  border: none;
+  width: 250px;
+  border-bottom: 2px solid $dark;
+  margin-top: 10px;
+}
+
+.input-text {
+
+}
+
+.input-label {
+  display: inline-block;
+  width: 256px;
+  height: 62px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  color: $dark;
+}
+
+.label-textarea {
+  width: 528px;
+  height: 120px;
+}
+
+.input-textarea {
+  width: 100%;
+  flex-wrap: wrap;
+  resize: none;
+}
