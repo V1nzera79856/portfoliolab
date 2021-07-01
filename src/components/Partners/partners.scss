@@ -1,0 +1,68 @@
+@import "../../scss/settings/colors";
+@import "../../scss/settings/fonts";
+
+.partners-container {
+  width: 1344px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.partners-types {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin-bottom: 80px;
+}
+
+.partners-description {
+  font-size: 22px;
+  color: $dark;
+  width: 640px;
+  text-align: center;
+}
+
+.partners-table {
+  width: 100%;
+  margin-top: 66px;
+
+  :last-child {
+    border-bottom: none;
+  }
+
+}
+
+.table-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid $grey;
+  font-family: $font-alt;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.row-name {
+  font-size: 26px;
+  font-weight: 300;
+}
+
+.partners-pages {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+}
+
+.partners-page {
+  display: inline-flex;
+  width: 25px;
+  height: 40px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $grey;
+}

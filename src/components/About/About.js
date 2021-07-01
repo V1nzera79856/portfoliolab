@@ -1,4 +1,5 @@
 import React from "react";
+
 import "./about.scss"
 import People from "./People.jpg";
 import {TWD} from "../TWD/TWD";

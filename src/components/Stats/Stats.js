@@ -1,4 +1,5 @@
 import React from "react";
+
 import "./stats.scss";
 
 export const Stats = (props) => {

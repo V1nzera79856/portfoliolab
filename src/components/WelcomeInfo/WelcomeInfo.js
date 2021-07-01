@@ -1,4 +1,5 @@
 import React from "react";
+
 import {TWD} from "../TWD/TWD";
 import {Btn} from "../Btn/Btn";
 import "./welcomeInfo.scss";

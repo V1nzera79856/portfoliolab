@@ -16,6 +16,10 @@
     border: none;
     text-transform: none;
     font-size: 14px;
+    text-decoration: none;
+    color: $grey;
+    margin-left: 15px;
+    padding: 10px;
 
     &:hover {
       border: 0.75px solid $yellow;

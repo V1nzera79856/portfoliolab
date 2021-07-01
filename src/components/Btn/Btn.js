@@ -1,8 +1,10 @@
 import React from "react";
-import "./btn.scss"
 
-export const Btn = ({text}) => {
+import "./btn.scss"
+import {Link} from 'react-scroll';
+
+export const Btn = ({text, action, linkTo}) => {
     return (
-        <a className="btn-link">{text}</a>
+        <Link hashSpy={true} smooth={true} to={linkTo} onClick={action} className="btn-link">{text}</Link>
     )
 }
