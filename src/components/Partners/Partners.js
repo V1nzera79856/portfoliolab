@@ -5,10 +5,63 @@ import {TWD} from "../TWD/TWD";
 import {Btn} from "../Btn/Btn";
 
 
-export const Partners = (props) => {
+export const Partners = () => {
 
-    const [description, setDescription] = useState(props.description[0]);
-    const [selected, setSelected] = useState(props.foundations)
+    const foundations = [[
+        "Dbam o Zdrowie",
+        "Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
+        "ubrania, jedzenie , sprzęt AGD, meble, zabawki"
+    ], [
+        "Dla dzieci!",
+        "Pomoc dzieciom z ubogich rodzin",
+        "ubrania, meble, zabawki"
+    ], [
+        "Bez domu",
+        "Pomoc dla osób nie posiadających miejsca zamieszkania",
+        "ubrania, jedzenie, ciepłe koce"
+    ], ["Przykład 1", "opis celu i misji", "przykładowe przedmioty"], [
+        "Przykład 2",
+        "opis celu i misji",
+        "przykładowe przedmioty"
+    ], ["Przykład 3", "opis celu i misji", "przykładowe przedmioty"], [
+        "Przykład 4",
+        "opis celu i misji",
+        "przykładowe przedmioty"
+    ], ["Przykład 5", "opis celu i misji", "przykładowe przedmioty"], [
+        "Przykład 6",
+        "opis celu i misji",
+        "przykładowe przedmioty"
+    ]]
+
+    const ngo = [[
+        "Przykład 1",
+        "opis celu i misji",
+        "przykładowe przedmioty"
+    ], ["Przykład 2", "opis celu i misji", "przykładowe przedmioty"], [
+        "Przykład 3",
+        "opis celu i misji",
+        "przykładowe przedmioty"
+    ], ["Przykład 4", "opis celu i misji", "przykładowe przedmioty"]]
+
+    const localOrganizations = [[
+        "Przykład 1",
+        "opis celu i misji",
+        "przykładowe przedmioty"
+    ], ["Przykład 2", "opis celu i misji", "przykładowe przedmioty"], [
+        "Przykład 3",
+        "opis celu i misji",
+        "przykładowe przedmioty"
+    ]]
+
+    const description = ["W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.", "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis doloribus maiores ratione!", "aaaaaaaaaaaaaa bbbbbbbbbbbb cccccccccccc dddddddd"]
+
+    const btn = ["Fundacjom",
+        "Organizacjom pozarządowym", "Lokalnym zbiórkom"];
+
+    const twd = "Komu pomagamy?";
+
+    const [descriptions, setDescriptions] = useState(description[0]);
+    const [selected, setSelected] = useState(foundations)
     const [page, setPage] = useState([])
     const [display, setDisplay] = useState(selected.slice(0, 3));
 
@@ -25,18 +78,18 @@ export const Partners = (props) => {
 
     const handleFoundation = (e) => {
         e.preventDefault();
-        setSelected(props.foundations);
-        setDescription(props.description[0]);
+        setSelected(foundations);
+        setDescriptions(description[0]);
     }
     const handleNGO = (e) => {
         e.preventDefault();
-        setSelected(props.ngo);
-        setDescription(props.description[1]);
+        setSelected(ngo);
+        setDescriptions(description[1]);
     }
     const handleLocal = (e) => {
         e.preventDefault();
-        setSelected(props.local);
-        setDescription(props.description[2]);
+        setSelected(localOrganizations);
+        setDescriptions(description[2]);
     }
 
     const handlePageChange = number => e => {
@@ -49,14 +102,14 @@ export const Partners = (props) => {
 
     return (
         <div className="partners-container">
-            <TWD text={props.twd}/>
+            <TWD text={twd}/>
             <div className="partners-types">
-                <Btn action={handleFoundation} text={props.btn1}/>
-                <Btn action={handleNGO} text={props.btn2}/>
-                <Btn action={handleLocal} text={props.btn3}/>
+                <Btn action={handleFoundation} text={btn[0]}/>
+                <Btn action={handleNGO} text={btn[1]}/>
+                <Btn action={handleLocal} text={btn[2]}/>
             </div>
             <p className="partners-description">
-                {description}
+                {descriptions}
             </p>
             <div className="partners-table">
                 {display.map((el, idx) => {
@@ -64,7 +117,7 @@ export const Partners = (props) => {
                         <div key={idx} className="table-row">
                             <div className="row-main">
                                 <h2 className="row-name">
-                                   Fundacja  "{el[0]}"
+                                    Fundacja "{el[0]}"
                                 </h2>
                                 <p className="row-description">
                                     Cel i misja: {el[1]}

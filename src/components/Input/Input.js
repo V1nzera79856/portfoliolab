@@ -2,20 +2,20 @@ import React from "react";
 
 import "./input.scss";
 
-export const Input = (props) => {
+export const Input = ({label,placeholder,type,name}) => {
 
-    if(props.type === "textarea") {
+    if(type === "textarea") {
         return (
-            <label className="input-label label-textarea" htmlFor=""> {props.label}
-                <textarea className="input-textarea input" name="" id="" cols="30" rows="5" placeholder={props.placeholder}>
+            <label className="input-label label-textarea" htmlFor=""> {label}
+                <textarea className="input-textarea input" name={name} id="" cols="30" rows="5" placeholder={placeholder}>
 
                 </textarea>
             </label>
         )
     }
     return (
-        <label className="input-label" htmlFor=""> {props.label}
-            <input className="input-text input" type={props.type} placeholder={props.placeholder}/>
+        <label className="input-label" htmlFor=""> {label}
+            <input className="input-text input" name={name} type={type} placeholder={placeholder}/>
         </label>
     )
 }

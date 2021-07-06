@@ -6,7 +6,11 @@ import {TWD} from "../TWD/TWD";
 import Signature from "./Signature.svg";
 
 
-export const About = ({text, twd}) => {
+export const About = () => {
+
+    const twd = "O nas"
+    const text = "Nori grape silver beet broccoli kombu beet \ngreens fava bean potato quandong celery. \nBunya nuts black-eyed pea prairie turnip leek \nlentil turnip greens parsnip."
+
     return (
         <>
             <div className="about-container">
